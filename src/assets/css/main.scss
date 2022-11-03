@@ -1,0 +1,25 @@
+.cont__inner {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  > div {
+    color: var(--black);
+    font-size: 50px;
+  }
+}
+
+// title
+.cont__title {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 50px;
+  em {
+    display: block;
+  }
+  strong {
+    display: block;
+  }
+}
