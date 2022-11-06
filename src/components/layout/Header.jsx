@@ -15,7 +15,7 @@ const Header = () => {
             <Link to="/Js">JS</Link>
           </li>
           <li>
-            <Link to="/Css">CSS</Link>
+            <Link to="/Image">Image</Link>
           </li>
           <li>
             <Link to="/Movie">MOVIE</Link>

@@ -14,7 +14,7 @@ const MovieText = ({ adult, backdrop_path, overview, title }) => {
 };
 
 function MovieCont({ movies }) {
-  console.log(movies);
+  // console.log(movies);
   return (
     <div className="movie__cont">
       <div className="container">
