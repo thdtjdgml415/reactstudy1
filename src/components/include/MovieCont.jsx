@@ -1,15 +1,18 @@
 import React from "react";
 
-const MovieText = ({ adult, backdrop_path, overview, title }) => {
+const MovieText = ({ adult, poster_path, title, vote }) => {
   return (
-    <li>
+    <a href="/">
       <div className="title">{title}</div>
       <div className="adult">{adult}</div>
       <div className="backdrop_path">
-        <img src={`https://image.tmdb.org/t/p/w500${backdrop_path}`} alt="" />
+        <img
+          src={`https://image.tmdb.org/t/p/w500/${poster_path}`}
+          alt={title}
+        />
       </div>
-      <div className="overview">{overview}</div>
-    </li>
+      <div className="vote">{vote}</div>
+    </a>
   );
 };
 
@@ -25,9 +28,10 @@ function MovieCont({ movies }) {
               <MovieText
                 key={idx}
                 adult={el.adult}
-                backdrop_path={el.backdrop_path}
+                poster_path={el.poster_path}
                 overview={el.overview}
                 title={el.title}
+                vote={el.vote_average}
               />
             ))}
           </div>
